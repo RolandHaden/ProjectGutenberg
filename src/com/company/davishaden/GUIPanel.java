@@ -22,9 +22,9 @@ public class GUIPanel extends JPanel {
     private final JButton wordCountButton, customWordCountButton, sentenceCountButton;
     private final JLabel wordCountText,customWordCountText, sentenceCountText;
     private final JTextField customWordInput;
-    public GUIPanel() throws IOException {
+    public GUIPanel(String l) throws IOException {
         //Declaring some variables
-        fileLocation = "Files/LMDA.txt";
+        fileLocation = l;
         //Image On Top
         BufferedImage bufferedImage = ImageIO.read(new File("Images/logo.png"));
         Image icon = bufferedImage.getScaledInstance(180, 108, Image.SCALE_DEFAULT);

@@ -14,8 +14,8 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         JFrame frame = new JFrame("Project Gutenberg");
-        Scanner inputStream = new Scanner(new FileReader("files/LMDA.txt"));
-        GUIPanel panel = new GUIPanel();
+        String location = "Files/LMDA.txt";
+        GUIPanel panel = new GUIPanel(location);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.getContentPane().add(panel);
         frame.pack();
